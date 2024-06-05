@@ -1,0 +1,53 @@
+.Task-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.Task-box > input{
+    outline: none;
+    padding: .5rem;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,.5);
+    padding-left: 4rem;
+    color: white;
+    transition: .4s;
+    font-family: "Dancing Script", cursive;
+    font-size: 1rem;
+
+
+}
+
+
+.Task-box > input:focus{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0,0,0,2.5);
+    color: white;
+}
+
+
+
+.Task-box > button{
+    background-color:darkgray;
+    outline: none;
+    border: 2px solid rgb(1, 146, 37);
+    padding: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: green;
+    transition: .4s;
+    font-weight: bolder;
+    font-family: "Dancing Script", cursive;
+    font-size: 1rem;
+
+
+}
+
+.Task-box > button:hover{
+    color: green;
+    background-color: white;
+    border: 2px solid rgb(18, 255, 10);
+}
