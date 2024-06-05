@@ -1,6 +1,19 @@
-.body{
-    background-image: url('../assets/animetodo.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+/* Apply styles to the body */
+.body {
+    background-image: url('../assets/animetodo.jpg'); /* Path to the background image */
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 100vh; /* Ensure the body covers the entire viewport height */
+    display: flex; /* Use flexbox to control the layout */
+    flex-direction: column; /* Arrange children in a column */
+}
+
+/* Expand the note-view to fill the available space */
+.note-view {
+    flex-grow: 1; /* Allow the note-view to grow and fill the available space */
+    display: grid; /* Use grid layout for the note-view */
+    grid-template-rows: repeat(5, 1fr); /* 5 equal rows */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 1rem; /* Space between grid items */
 }
